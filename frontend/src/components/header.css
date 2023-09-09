@@ -1,0 +1,122 @@
+/* logo image setting */
+
+.logoimage{
+    margin-top: 10px;
+      height: 100px;
+      width: 400px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: flex-end; 
+    gap: 50px; 
+    position: relative;
+    right: 90px;
+    bottom: 70px;
+}
+a{
+    text-decoration: none;
+    font-size: larger;
+    font-family: serif;
+    color: black;
+}
+hr{
+    position: relative;
+    bottom: 48px;
+    background-color: lightgray;
+    
+}
+
+/* header.css */
+.mainheader {
+    position: relative;
+  }
+  
+  .mobile-menu {
+    position: absolute;
+    top: 60px; /* Adjust this value to position the menu below the header */
+    right: 0;
+    background-color: #ffffff;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 1;
+  }
+  
+  .mobile-menu a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .mobile-menu a:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+
+
+
+
+/* Media Query for Tablets (e.g., iPad) */
+@media screen and (max-width: 768px) {
+    .logoimage {
+        height: 86px; /* Adjust height for tablets */
+        width: auto; /* Allow the width to adapt */
+    }
+
+    hr{
+        position: relative;
+        bottom: 15px;
+        background-color: lightgray;
+        
+    }
+    .menu-icon {
+        position: absolute;
+        top: 30px; /* Adjust the top position as needed */
+        right: 20px; /* Adjust the right position as needed */
+        cursor: pointer;
+      }
+    .flex-container {
+        flex-direction: column; /* Stack links vertically on tablets */
+        align-items: center; /* Center-align links on tablets */
+        gap: 20px; /* Reduce the gap between links */
+        position: static; /* Remove positioning on tablets */
+        margin-top: 20px; /* Add spacing at the top on tablets */
+        right: 0; /* Reset right positioning */
+        bottom: 0; /* Reset bottom positioning */
+    }
+    
+}
+
+/* Media Query for Mobile Phones */
+@media screen and (max-width: 480px) {
+    .logoimage {
+        height: 60px; /* Adjust height for mobile phones */
+        width: auto; /* Allow the width to adapt */
+    }
+    .flex-container {
+        flex-direction: column; /* Stack links vertically on mobile phones */
+        align-items: center; /* Center-align links on mobile phones */
+        gap: 15px; /* Reduce the gap between links */
+        position: static; /* Remove positioning on mobile phones */
+        margin-top: 10px; /* Add spacing at the top on mobile phones */
+        right: 0; /* Reset right positioning */
+        bottom: 0; /* Reset bottom positioning */
+    }
+    hr{
+        position: relative;
+        bottom: 20px;
+        background-color: lightgray;
+        
+    }
+    .menu-icon {
+        position: absolute;
+        top: 18px; /* Adjust the top position as needed */
+        right: 20px; /* Adjust the right position as needed */
+        cursor: pointer;
+      }
+}

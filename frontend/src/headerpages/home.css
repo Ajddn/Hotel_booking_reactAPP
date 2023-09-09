@@ -1,0 +1,910 @@
+/* // coursel setting and images inside it */
+body{
+    background-color: #EEEEEE;
+}
+.mycaurosel{
+      position: relative;
+      bottom: 62px;
+}
+.imageparentdiv{
+
+  height: 740px;
+  /* opacity: 0.7; */
+}
+.myimageclass{
+    
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+
+
+/* // form part  */
+
+.form-part{
+   
+    width: 100%;
+    height: 540px;
+    position: relative;
+    bottom: 44px;
+}
+
+.connect{
+    position:absolute;
+    left: 590px;
+    top: 80px;
+    font-size: 7dvh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.longbar{
+    width: 100%;
+    background-color: #E8E2E2;
+    height: 150px;
+    position: relative;
+    top: 300px;
+}
+
+.onthetop{
+height: 480px;
+width: 620px;
+background-color: #F8F6F4;
+position: absolute;
+left: 465px;
+top: 180px;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+
+}
+
+.input1name{
+    border-radius:0;
+    border : 0;
+    outline:none;
+    background-color :#E8E2E2;
+    position: relative;
+    left: 95px;
+    bottom: 120px;
+    width: 440px;
+    height: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .input2email{
+     border-radius:0;
+     border : 0;
+     outline:none ;
+     background-color :#E8E2E2;
+     position: relative;
+     left: 95px;
+     bottom: 92px;
+     width: 440px;
+     height: 40px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .input2email::placeholder {
+    color: black; /* Change this to your desired color */
+  }
+  .input1name::placeholder {
+    color: black; /* Change this to your desired color */
+    
+  }
+  .input3text::placeholder {
+    color: black; /* Change this to your desired color */
+    
+  }
+  .input3text{
+    
+    outline:none;
+    border : 0;
+    background-color :#E8E2E2;
+    position: relative;
+    left: 95px;
+    bottom: 60px;
+    width: 440px;
+    height: 200px;
+    border-radius : 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .mybuttonsubmit{
+  
+     background-color :darkgray;
+     border: 0;width: 440px;
+     position: relative;
+     left: 94px;
+     bottom: 30px;
+     
+
+  }
+  .btnforsubmit{
+      background: #E8E2E2;
+      font-weight: bold;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 10px;
+      font-family: sans-serif;
+      color: black;
+      font-size: 20px;
+      padding: 8px 135px 8px 136px;
+      text-decoration: none;
+     
+    }
+    
+    .btnforsubmit:hover {
+      background: gray;
+      text-decoration: none;
+    }
+
+/* about us css */
+
+.aboutusmain{
+    
+    width: 100%;
+    height: 420px;
+    position: relative;
+    top: 45px;
+    text-align: center;
+}
+
+.aboutusheading{
+   padding-top: 120px;
+   padding-right: 10px;
+   font-size: 7dvh;
+   font-family: 'Roboto', sans-serif;
+}
+
+
+.firstphase{
+   
+    width: 670px;
+    height: 550px;
+    position: relative;
+    left: 105px;
+    bottom: 110px;
+    
+}
+
+.aboutusimag1{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border-radius: 12px;
+}
+  
+.firstcontent{
+    background-color: #F8F6F4;
+    width: 660px;
+    height: 550px;
+    position: relative;
+    left: 680px;
+    bottom: 550px;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+
+.firstcontent > p {
+     font-size: large;
+     font-family: sans-serif;
+  }
+
+  /* secondphase of about us */
+
+.secondphaseparent{
+    display: flex;
+    gap: 10px;
+    padding-left: 100px;
+    position: relative;
+    bottom: 60px;
+}
+.secondphase{
+    width: 670px;
+    height: 550px;
+}
+.secondcontent{
+    background-color: #F8F6F4;
+    width: 670px;
+    height: 550px;
+    border-radius: 12px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.secondcontent > p {
+    font-size: large;
+    font-family:  sans-serif;
+    
+
+ }
+
+ /* rooms and facilities */
+
+
+ .roomheading{
+  align-self: center;
+  font-family: sans-serif;
+  font-weight: 600;
+ 
+ }
+ .mediaheading{
+  font-size: 6dvh;
+ }
+ .maindivrooms{
+    padding-top: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+ }
+
+ .rooms{
+      background-color: #F8F6F4;
+      width: 86%;
+      height: 490px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      
+ }
+
+ 
+
+
+ .hostelimageparentdiv{
+     width: 490px;
+     height: 380px;
+     position: relative;
+     right: 10px;
+ }
+
+ .roomfacilities{
+    background-color: lightgray;
+    width: 590px;
+    height: 380px;
+    padding-left: 20px; 
+    padding-top: 20px;
+    border-radius: 12px;
+    
+ }
+  
+ .hostelimage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+ }
+
+ .features-list li {
+     font-size: large;
+     font-family: sans-serif;
+     font-weight: bold;
+     
+  }
+
+/* facilities part start */
+
+.facilitiesheading {
+    position: relative;
+    bottom: 10px;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 50px;
+    padding-left: 20px;
+    margin-bottom: 70px;
+  }
+  
+  .mainfacilities {
+    background-color: #F8F6F4;
+    width: 95%;
+    height: 930px; 
+    border-radius: 12px;
+    margin-top: 50px;
+    margin-left: 35px;
+  }
+
+   .facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+    width: 100%;
+  }
+
+
+  /* moreinformation div */
+
+  .moreinformation{
+   background-color: #F8F6F4;
+   width: 97%;
+   margin-left: 20px;
+   margin-top: 70px;
+   height:  760px;  
+   border-radius: 12px;
+  }
+  .insidemoreinformation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 80px;
+  }
+
+  .intro{
+   width: 440px;
+   height: 540px;
+   background-color: lightgray;
+   border-radius: 12px;
+   text-align: center;
+   padding-left: 10px;
+   padding-right: 10px ;
+   transition: transform 0.3s ease-in-out;
+   cursor: pointer;
+  }
+
+  .intro:hover {
+    transform: scale(1.1); /* Scale up by 10% on hover */
+  }
+.intro h4 {
+   margin-top: 30px;
+   margin-bottom: 40px ;
+   font-size :xx-large;
+  }
+  
+  .intro p {
+    text-align: left;
+    font-weight: 500;
+    
+  }
+   
+/* photogallery */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 10px; 
+    padding-left: 40px ;
+    padding-right: 40px;
+  }
+  
+  .image-grid img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .photogallery h1{
+  margin-top: 30px;
+  }
+
+  .photogallery p{
+    position: relative;
+    bottom: 50px;
+    margin-left: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+
+
+  .btn {
+    background: #969396;
+    background-image: -webkit-linear-gradient(top, #969396, #a694a6);
+    background-image: -moz-linear-gradient(top, #969396, #a694a6);
+    background-image: -ms-linear-gradient(top, #969396, #a694a6);
+    background-image: -o-linear-gradient(top, #969396, #a694a6);
+    background-image: linear-gradient(to bottom, #969396, #a694a6);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 13px 80px 13px 80px;
+    text-decoration: none;
+    position: relative;
+    left: 620px;
+    margin-top: 70px;
+  }
+  
+  .btn:hover {
+    text-decoration: none;
+  }
+
+  /* before footer */
+
+  .contactus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    height: 550px;
+  }
+
+  .conatactinfo1{
+    width: fit-content;
+    height: fit-content;
+    
+  }
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .info-item svg {
+    margin-right: 20px;
+    fill: #333; 
+  }
+  
+  .info-item h4 {
+    margin: 0;
+  }
+  
+  .info-item p {
+    margin: 5px 0 0;
+  }
+
+
+
+
+  /* media queries */
+
+/* Media Query for Tablets (e.g., iPad) */
+@media screen and (max-width: 768px) {
+.connect{
+  position:absolute;
+  left: 150px;
+  top: 80px;
+  font-size: 6dvh;
+  font-family: 'Roboto', sans-serif;
+  white-space: nowrap;
+}
+.mycaurosel{
+  position: relative;
+  bottom: 28px;
+}
+
+.onthetop{
+position: absolute;
+left: 75px;
+top: 180px;
+}
+
+  /* contact us form */  
+.aboutusheading{
+   font-size: 6dvh;
+}
+
+.firstphase{
+   
+    width: 670px;
+    height: 550px;
+    position: relative;
+    left: 60px;
+    bottom: 110px;  
+    margin-bottom: 540px;  
+}
+  
+.firstcontent{
+    position: relative;
+    left: 2px;
+    bottom: -20px;
+    width: 670px;
+    height: 550px;
+}
+
+
+  /* secondphase of about us */
+
+.secondphaseparent{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding-left: 50px;
+    position: relative;
+    bottom: 60px;
+}
+
+
+ /* about us  is above ended*/
+  
+/* rooms and facilities */
+
+
+
+ .mediaheading{
+  font-size: 5dvh;
+  text-align: center;
+ }
+ .maindivrooms{
+    padding-top: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;    
+ }
+
+ .rooms{
+      width: 90%;
+      height: 840px;
+      display: flex;
+      flex-direction: column;
+ }
+ .hostelimageparentdiv{
+     width: 570px;
+     
+ }
+
+ /* facilities part */
+
+ .mainfacilities {
+  width: 95%;
+  height: 990px; 
+  border-radius: 12px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+/* moreinfo */
+
+
+.moreinformation{
+  height:  1550px;  
+ }
+ .insidemoreinformation{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-left: 50px; 
+   margin-top: 0px;
+ }
+
+ .intro{
+  width: 660px;
+  height: 430px;
+ }
+ .roomheading{
+     white-space: pre-line;
+ }
+
+
+ /* visual tour */
+
+ .image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  
+}
+
+.btn {
+  position: relative;
+  left: 430px;
+  bottom: 190px;
+}
+/* map location */
+.contactus{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  height: 870px;
+  margin-top: 0px;
+  width: 100%;
+  margin-left: 0px;
+}
+
+
+
+}
+
+/* Media Query for Mobile Phones */
+@media screen and (max-width: 480px) {
+  .mycaurosel {
+    position: relative;
+      bottom: 33px; 
+  }
+/*   
+  contact us form */
+
+.connect{
+  position:absolute;
+  left: 90px;
+  top: 80px;
+  font-size: 7dvh;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.onthetop{
+height: 480px;
+width: 450px;
+position: absolute;
+left: 15px;
+top: 180px;
+}
+
+.input1name{
+  position: relative;
+  left: 25px;
+  bottom: 120px;
+  width: 400px;
+  height: 40px;
+  
+}
+.input2email{
+   position: relative;
+   left: 25px;
+   bottom: 92px;
+   width: 400px;
+   height: 40px;
+ 
+}
+
+.input3text{
+  
+  position: relative;
+  left: 25px;
+  bottom: 60px;
+  width: 400px;
+
+}
+.mybuttonsubmit{
+
+   position: relative;
+   left: 25px;
+   bottom: 30px;
+   width: 400px;
+   
+}
+ 
+/* about us */
+
+.aboutusheading{
+ padding-top: 120px;
+ padding-right: 10px;
+ font-size: 7dvh;
+ font-family: 'Roboto', sans-serif;
+}
+
+
+.firstphase{
+  width: 450px;
+  height: 450px;
+  position: relative;
+  left: 17px;
+  bottom: 140px;
+}
+
+.aboutusimag1{
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.firstcontent{
+  background-color: #F8F6F4;
+  width: 450px;
+  height: 500px;
+  position: relative;
+  left: -2px;  
+  bottom: -20px;
+
+}
+
+
+.firstcontent > p {
+   font-size: medium;
+   font-family: sans-serif;
+}
+
+/* secondphase of about us */
+
+.secondphaseparent{
+  display: flex;
+  gap: 15px;
+  padding-left: 30px;
+  position: relative;
+  bottom: 150px;
+  right: 16px;
+}
+.secondphase{
+  width: 450px;
+  height: 450px;
+}
+.secondcontent{
+  width: 450px;
+  height: 590px;
+  border-radius: 12px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.secondcontent > p {
+  font-size: medium;
+  font-family:  sans-serif;
+  
+}
+
+ /* rooms and facilities */
+
+.phoneversion{
+    position: relative;
+    bottom: 60px;
+ }
+ .maindivrooms{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+ }
+
+ .rooms{
+      background-color: #F8F6F4;
+      width: 90%;
+      height: 850px;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      
+ }
+ .hostelimageparentdiv{
+     width: 390px;
+     height: 380px;
+     position: relative;
+     right: 0px;
+ }
+
+ .roomfacilities{
+    width: 390px;
+    height: 390px;
+ }
+
+
+/* facilities part start */
+
+.facilitiesheading {
+    padding-left: 0px;
+    font-size: 4dvh;
+  }
+  
+  .mainfacilities {
+    width: 95%;
+    height: 1330px; 
+    margin-left: 10px;
+  }
+
+   .facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+  }
+
+
+  /* moreinformation div */
+
+  .moreinformation{
+   width: 97%;
+   margin-left: 10px;
+   margin-top: 70px;
+   height:  1870px;  
+  }
+  .insidemoreinformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .intro{
+   width: 440px;
+   height: 540px;
+   padding-left: 10px;
+   padding-right: 10px ;
+   position: relative;
+   right: 37px;
+  }
+
+  
+.intro h4 {
+   margin-top: 30px;
+   margin-bottom: 20px ;
+   font-size :xx-large;
+  }
+  
+  
+   
+/* photogallery */
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px; 
+  }
+  
+  .btn {
+    position: relative;
+    left: 120px;
+    bottom: 10px;
+}
+  /* before footer */
+
+  .contactus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 710px;
+    width: 96%;
+    margin-bottom: 80px;
+  }
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .conatactinfo1 h1{
+    margin-left: 30px;
+  }
+  
+  .info-item svg {
+    margin-right: 20px;
+    fill: #333; 
+  }
+  
+  .info-item h4 {
+    margin-right: 30px ;
+  }
+  
+
+ 
+
+
+
+
+
+}
+
+
+  
+  
+ 
+  
+  
+
+ 
+
+

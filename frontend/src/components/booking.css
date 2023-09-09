@@ -1,0 +1,82 @@
+/* Styling for the grid container */
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px; /* Add padding to create space on the sides */
+  }
+  
+  /* Styling for the booking container */
+  
+  .booking-container {
+    background-color:  #F8F6F4;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    width: calc(50% - 20px); 
+    flex-basis: calc(50% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    height: 600px;
+    transition: transform 0.3s ease, easebox-shadow 0.3s ease;
+    overflow: hidden;
+   
+  }
+  .booking-container :hover {
+    transform: scale(1.05); /* Enlarge the image slightly */
+  }
+  
+  /* Styling for the booking image */
+  .booking-image {
+    width: 600px; /* Adjust image width */
+    height: 400px; /* Adjust image height */
+    /* border-radius: 50%; */
+    object-fit: cover;
+    margin: 0 auto 10px; /* Center image and add margin bottom */
+    border-radius: 12px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .booking-container {
+      width: calc(90% - 1px); 
+      flex-basis: calc(50% - 20px);
+      padding: 20px;
+      margin-left: 20px;
+      }
+
+      .grid-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+
+}
+
+
+@media screen and (max-width: 480px) {
+  .booking-container {
+    width: calc(99% - 1px); 
+    flex-basis: calc(50% - 10px);
+    padding: 20px;
+    margin-left: 0px;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .booking-image {
+      width: 400px; 
+      height: 300px; 
+     
+    }
+
+
+}
