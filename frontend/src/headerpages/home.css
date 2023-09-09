@@ -471,11 +471,12 @@ justify-content: flex-end;
 
   /* media queries */
 
+
 /* Media Query for Tablets (e.g., iPad) */
 @media screen and (max-width: 768px) {
 .connect{
   position:absolute;
-  left: 150px;
+  left: 240px;
   top: 80px;
   font-size: 6dvh;
   font-family: 'Roboto', sans-serif;
@@ -484,6 +485,9 @@ justify-content: flex-end;
 .mycaurosel{
   position: relative;
   bottom: 28px;
+}
+.imageparentdiv{
+  height: 540px; 
 }
 
 .onthetop{
@@ -495,6 +499,7 @@ top: 180px;
   /* contact us form */  
 .aboutusheading{
    font-size: 6dvh;
+   
 }
 
 .firstphase{
@@ -572,6 +577,8 @@ top: 180px;
 
 .moreinformation{
   height:  1550px;  
+  position: relative;
+  right: 10px;
  }
  .insidemoreinformation{
    display: flex;
@@ -626,14 +633,17 @@ top: 180px;
     position: relative;
       bottom: 33px; 
   }
+  .imageparentdiv{
+    height: 320px; 
+  }
 /*   
   contact us form */
 
 .connect{
   position:absolute;
-  left: 90px;
+  left: 85px;
   top: 80px;
-  font-size: 7dvh;
+  font-size: 2.5rem;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -685,7 +695,7 @@ top: 180px;
 .aboutusheading{
  padding-top: 120px;
  padding-right: 10px;
- font-size: 7dvh;
+ font-size: 2.5rem;
  font-family: 'Roboto', sans-serif;
 }
 
@@ -759,6 +769,7 @@ top: 180px;
 .phoneversion{
     position: relative;
     bottom: 60px;
+    font-size: 2rem;
  }
  .maindivrooms{
     align-items: center;
@@ -855,7 +866,7 @@ top: 180px;
   
   .btn {
     position: relative;
-    left: 120px;
+    left: 100px;
     bottom: 10px;
 }
   /* before footer */
@@ -889,22 +900,7 @@ top: 180px;
     margin-right: 30px ;
   }
   
-
- 
-
-
-
-
-
 }
-
-
-  
-  
- 
-  
-  
-
  
 
 
