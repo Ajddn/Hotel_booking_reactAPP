@@ -4,10 +4,15 @@ import Footer from "../components/Footer";
 import { HiLocationMarker } from "react-icons/hi";
 import { BsTelephoneFill } from "react-icons/bs";
 import "./booknow.css";
+// import { Link } from "react-router-dom";
+
 
 const Booknow = () => {
   return (
+
     <div>
+      {/* <Link to="/">Go to Home Section</Link> */}
+
       <h1 className="booknowheading">Secure Your Spot at the Finest Girls and Boys Hostels in Kota</h1>
       <Booking />
 

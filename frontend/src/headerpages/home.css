@@ -111,6 +111,7 @@ justify-content: flex-end;
     border-radius : 10px;
     font-family: sans-serif;
     font-weight: bold;
+    cursor: text;
   }
   .mybuttonsubmit{
   
@@ -175,6 +176,7 @@ justify-content: flex-end;
     height: 100%; 
     object-fit: cover;
     border-radius: 12px;
+    
 }
   
 .firstcontent{
@@ -268,9 +270,6 @@ justify-content: flex-end;
       
  }
 
- 
-
-
  .hostelimageparentdiv{
      width: 490px;
      height: 380px;
@@ -293,7 +292,13 @@ justify-content: flex-end;
     height: 100%;
     object-fit: cover;
     border-radius: 12px;
+    transition: transform 0.3s ease-in-out;
+   
  }
+ .hostelimage:hover {
+  transform: scale(1.1); /* Scale up by 10% on hover */
+}
+
 
  .features-list li {
      font-size: large;
@@ -428,6 +433,11 @@ justify-content: flex-end;
   
   .btn:hover {
     text-decoration: none;
+    color: white;
+  }
+  .btn a{
+    text-decoration: none;
+    color: white;
   }
 
   /* before footer */
@@ -623,15 +633,13 @@ top: 180px;
   margin-left: 0px;
 }
 
-
-
 }
 
 /* Media Query for Mobile Phones */
 @media screen and (max-width: 480px) {
   .mycaurosel {
     position: relative;
-      bottom: 33px; 
+      bottom: 35px; 
   }
   .imageparentdiv{
     height: 320px; 
@@ -827,7 +835,7 @@ top: 180px;
 
   .moreinformation{
    width: 97%;
-   margin-left: 10px;
+   margin-left: 18px;
    margin-top: 70px;
    height:  1870px;  
   }

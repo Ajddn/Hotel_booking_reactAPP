@@ -13,11 +13,15 @@
     position: relative;
     right: 90px;
     bottom: 70px;
+   
+
+
 }
-a{
+.flex-container a{
     text-decoration: none;
     font-size: larger;
-    font-family: serif;
+    font-family: sans-serif;
+    font-weight: bolder;
     color: black;
 }
 hr{
@@ -27,10 +31,17 @@ hr{
     
 }
 
-/* header.css */
-.mainheader {
-    position: relative;
-  }
+
+
+   .mainheader {
+    position: sticky;
+    top: 0;;
+    z-index: 1000;
+    background-color: #EEEEEE;
+    height: 112px;
+     
+  } 
+  
   
   .mobile-menu {
     position: absolute;
@@ -89,6 +100,40 @@ hr{
         right: 0; /* Reset right positioning */
         bottom: 0; /* Reset bottom positioning */
     }
+
+    .mobile-menu {
+        /* Add this */
+         max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        margin-top: 35px;
+        z-index: 2;
+        background-color:  #EEEEEE;
+        opacity: 0.95;
+       
+        
+        
+      }
+      .mobile-menu a{
+        font-family: sans-serif;
+        font-size: x-larger;
+        font-weight:bolder;
+      }
+      
+      .mobile-menu.open {
+        /* Add this */
+        max-height: 500px; /* Adjust the max height as needed */
+        transition: max-height 0.3s ease-in-out;
+       
+        
+      }
+
+      .mainheader {
+       
+        height: 100px;
+         
+      } 
+      
+      
     
 }
 
@@ -119,4 +164,26 @@ hr{
         right: 20px; /* Adjust the right position as needed */
         cursor: pointer;
       }
+
+
+      .mobile-menu {
+        /* Add this */
+        height: 100vh;
+        /* overflow: hidden;
+        transition: max-height 0.3s ease-in-out; */
+        margin-top: 7px;
+        z-index: 3;
+      }
+      
+      .mobile-menu.open {
+        /* Add this */
+        max-height: 500px; /* Adjust the max height as needed */
+        transition: max-height 0.3s ease-in-out;
+       
+        
+      }
+      .mainheader {
+        height: 70px;         
+      } 
+      
 }

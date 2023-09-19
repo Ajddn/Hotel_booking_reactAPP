@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import {  toast } from "react-hot-toast";
 import { BiSolidCctv } from "react-icons/bi";
 import { FaShower } from "react-icons/fa";
 import { TbAirConditioning } from "react-icons/tb";
@@ -42,9 +44,40 @@ import "./home.css";
 import Footer from "../components/Footer";
 
 const Home = () => {
+  const form = useRef();
+  
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log(form.current); 
+
+    emailjs
+      .sendForm(
+        "service_b7d9c9q",
+        "template_xpalycs",
+        form.current,
+        "6kMTBzQD3UT2IaBDk"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          toast.success("Message sent successfully!");
+          // Reset form fields manually
+        form.current.querySelector(".input1name").value = "";
+        form.current.querySelector(".input2email").value = "";
+        form.current.querySelector(".input3text").value = "";
+        },
+        (error) => {
+          console.log(error.text);
+          toast.error("Error sending message.");
+        }
+      );
+  };
+
   return (
     <div>
-      <div className="mycaurosel">
+      <div  id="home" className="mycaurosel">
+        
         <div className="carousel-div">
           <div
             id="carouselExampleCaptions"
@@ -81,10 +114,9 @@ const Home = () => {
               >
                 <img src={photo1} className="d-block  myimageclass" alt="..." />
                 <div className="carousel-caption d-none d-md-block ">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first slide.
-                  </p>
+                  
+                  <h1>Contact us at 123-456-7890.</h1>
+                  
                 </div>
               </div>
               <div
@@ -93,20 +125,15 @@ const Home = () => {
               >
                 <img src={photo2} className="d-block  myimageclass" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>
-                    Some representative placeholder content for the second
-                    slide.
-                  </p>
+                  <h1>"Revitalizing and Wholesome Environment"</h1>
+                  
                 </div>
               </div>
               <div className="carousel-item  imageparentdiv">
                 <img src={photo3} className="d-block  myimageclass" alt="..." />
                 <div className="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>
-                    Some representative placeholder content for the third slide.
-                  </p>
+                  
+                <h1 > Safe and Excellent Culinary Experience</h1>
                 </div>
               </div>
             </div>
@@ -133,29 +160,42 @@ const Home = () => {
       </div>
 
       <div className="form-part">
-        <h1 className="connect">Connect with us</h1>
-        <div className="form">
-          <div className="longbar"></div>
-          <div className="onthetop">
-            <input className="input1name" placeholder="Enter your name"></input>
-            <input
-              className="input2email"
-              placeholder="Enter a valid email address"
-            ></input>
-            <textarea
-              className="input3text"
-              rows={5}
-              cols={44}
-              name="description"
-              placeholder="Enter your message"
-            ></textarea>
-            <button className="btnforsubmit mybuttonsubmit">SUBMIT</button>
+        <form ref={form} onSubmit={sendEmail}>
+          <h1 className="connect">Connect with us</h1>
+          <div className="form">
+            <div className="longbar"></div>
+            <div className="onthetop">
+              <input
+                className="input1name"
+                type="text"
+                name="user_name"
+                placeholder="Enter your name"
+              ></input>
+              <input
+                className="input2email"
+                type="email"
+                name="user_email"
+                placeholder="Enter a valid email address"
+              ></input>
+              <textarea
+                className="input3text"
+                rows={5}
+                cols={44}
+                name="message"
+                placeholder="Enter your message"
+                type="submit" 
+              ></textarea>
+              <button className="btnforsubmit mybuttonsubmit" type="submit">
+                SUBMIT
+              </button>
+              
+            </div>
           </div>
-        </div>
+        </form>
       </div>
 
       {/* about us */}
-      <div className="aboutusmain">
+      <div id="about" className="aboutusmain">
         <h1 className="aboutusheading">WHY CHOOSE US</h1>
       </div>
       <div>
@@ -166,12 +206,11 @@ const Home = () => {
             <p className="pagragraph-content1">
               Divine Residency is the ultimate solution for students seeking
               exceptional boys' and girls' hostels as well as PG accommodations
-              in Kota. Divine Residency is the haven that
-              students have been searching for to fulfill their dreams. We offer
-              an unparalleled environment that surpasses the standard of any
-              other boys' and girls' hostels in Kota. Our focus is on creating a
-              true 'home away from home' experience, where comfort and care
-              blend seamlessly.
+              in Kota. Divine Residency is the haven that students have been
+              searching for to fulfill their dreams. We offer an unparalleled
+              environment that surpasses the standard of any other boys' and
+              girls' hostels in Kota. Our focus is on creating a true 'home away
+              from home' experience, where comfort and care blend seamlessly.
             </p>
 
             <p className="pagragraph-content2">
@@ -227,8 +266,8 @@ const Home = () => {
         </div>
 
         {/* rooms building with facilities */}
-        <div className="maindivrooms">
-          <h1 className="roomheading mediaheading phoneversion" >
+        <div id="rooms" className="maindivrooms">
+          <h1 className="roomheading mediaheading phoneversion">
             Hostel Accommodations at Divines Residency
           </h1>
           <div className="rooms">
@@ -417,7 +456,7 @@ const Home = () => {
       </div>
       {/* photogallery */}
 
-      <div className="photogallery">
+      <div  id="gallery" className="photogallery">
         <h1 className="roomheading facilitiesheading">Visual Tour</h1>
         <p className=""> Discover the Top Girls/Boys Hostel in Kota</p>
         <div class="image-grid">
@@ -431,10 +470,10 @@ const Home = () => {
           <img src={image8} alt="Image8" />
           <img src={image9} alt="Image9" />
         </div>
-        <button className="btn">SEE MORE</button>
+        <a href = '/Moreimages'><button className="btn" >SEE MORE</button></a>
       </div>
       {/* contact us information */}
-      <div className="moreinformation contactus">
+      <div id="contact" className="moreinformation contactus">
         <div className="conatactinfo1">
           <MapComponent />
         </div>

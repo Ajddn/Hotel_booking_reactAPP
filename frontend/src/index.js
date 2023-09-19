@@ -14,14 +14,15 @@ import {
 import Home from "./headerpages/Home";
 
 import Booknow from "./headerpages/Booknow";
+import { Moreimages } from "./headerpages/Moreimages";
+
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index element={<Home />} />
-
-      {/* <Route path="Home" element={<Home />} /> */}
       <Route path="Booknow" element={<Booknow />} />
+      <Route path="Moreimages" element={<Moreimages />} />
       
     </Route>
   )
