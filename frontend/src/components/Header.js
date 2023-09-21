@@ -95,7 +95,7 @@ const Header = () => {
 
       {(!isBookNowPage && !isMoreImagesPage) && (
           // <Link to="#home" onClick={() => { redirectToHome(); closeMenu(); }}></Link>
-          <a href="#home">Home</a>
+          <a href="#home" onClick={closeMenu}>Home</a>
         )}
         
         {(!isBookNowPage && !isMoreImagesPage) && (

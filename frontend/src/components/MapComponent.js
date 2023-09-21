@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./map.css"
 const MapComponent = () => {
   const screenWidth = window.innerWidth;
 

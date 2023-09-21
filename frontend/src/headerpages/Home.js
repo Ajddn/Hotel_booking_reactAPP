@@ -209,8 +209,7 @@ const Home = () => {
               in Kota. Divine Residency is the haven that students have been
               searching for to fulfill their dreams. We offer an unparalleled
               environment that surpasses the standard of any other boys' and
-              girls' hostels in Kota. Our focus is on creating a true 'home away
-              from home' experience, where comfort and care blend seamlessly.
+              girls' hostels in Kota.
             </p>
 
             <p className="pagragraph-content2">
@@ -470,7 +469,7 @@ const Home = () => {
           <img src={image8} alt="Image8" />
           <img src={image9} alt="Image9" />
         </div>
-        <a href = '/Moreimages'><button className="btn" >SEE MORE</button></a>
+        <a href = '/Moreimages'><button className="btn btnphotogallery" >SEE MORE</button></a>
       </div>
       {/* contact us information */}
       <div id="contact" className="moreinformation contactus">

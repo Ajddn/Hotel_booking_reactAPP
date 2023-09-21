@@ -1,0 +1,6 @@
+@media screen and (max-width: 480px) {
+    .contactinfo1 iframe {
+      width: 99%; /* Adjust the width for small screens */
+      height: 300px; /* Adjust the height for small screens */
+    }
+  }

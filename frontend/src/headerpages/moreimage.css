@@ -109,6 +109,20 @@
   object-fit: contain;
 }
 
+.moreseebtn{
+  position: relative;
+  align-self: center;
+  left: 90px;
+}
 
+
+}
+
+@media screen and (max-width:  390px) {
+  .moreseebtn{
+    position: relative;
+   left: 40px;
+   align-self: center;
+  }
 }
   
